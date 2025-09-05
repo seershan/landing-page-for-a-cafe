@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Grind - Your Perfect Coffee Escape</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="leading-normal tracking-normal">
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-2xl font-bold text-white flex items-center">
+                    <i data-lucide="coffee" class="mr-2"></i>
+                    The Daily Grind
+                </a>
+                
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#hero" class="text-white nav-link">Home</a>
+                    <a href="#about" class="text-white nav-link">About</a>
+                    <a href="#menu" class="text-white nav-link">Menu</a>
+                    <a href="#contact" class="text-white nav-link">Contact</a>
+                    <button class="px-6 py-2 rounded-full btn-secondary text-white border-white hover:bg-white hover:text-gray-800">Order Online</button>
+                </div>
+
+                <!-- Mobile Nav Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-70 backdrop-blur-sm">
+            <a href="#hero" class="block py-2 px-4 text-sm text-white hover:bg-gray-700">Home</a>
+            <a href="#about" class="block py-2 px-4 text-sm text-white hover:bg-gray-700">About</a>
+            <a href="#menu" class="block py-2 px-4 text-sm text-white hover:bg-gray-700">Menu</a>
+            <a href="#contact" class="block py-2 px-4 text-sm text-white hover:bg-gray-700">Contact</a>
+            <div class="p-4">
+                 <button class="w-full px-6 py-2 rounded-full btn-secondary text-white border-white hover:bg-white hover:text-gray-800">Order Online</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-bg h-screen flex items-center justify-center">
+        <div class="text-center text-white p-4">
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 leading-tight fade-in">Your Daily Dose of Happiness</h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8 fade-in" style="transition-delay: 200ms;">Freshly brewed coffee, artisanal pastries, and a cozy atmosphere that feels like home.</p>
+            <a href="#menu" class="px-8 py-4 rounded-full font-bold btn-primary text-lg fade-in" style="transition-delay: 400ms;">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="about" class="py-20 lg:py-32">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="fade-in">
+                        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1937&q=80" alt="Cafe Interior" class="rounded-lg shadow-2xl w-full h-auto object-cover">
+                    </div>
+                    <div class="fade-in">
+                        <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-gray-800">Our Story</h2>
+                        <p class="mb-4">Founded in 2023, The Daily Grind started as a simple dream: to create a space where community could gather over a cup of exceptional coffee. We believe that coffee is more than just a drink; it's a ritual, a conversation starter, a moment of peace in a busy day.</p>
+                        <p>We source our beans from the finest sustainable farms around the globe, roast them in-house to perfection, and train our baristas to be true artisans of their craft. Come in, slow down, and enjoy the grind.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="py-20 lg:py-32 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-4 text-gray-800 fade-in">Our Signature Menu</h2>
+                <p class="max-w-2xl mx-auto mb-12 text-gray-600 fade-in">Crafted with passion, served with a smile.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Menu Item 1 -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 fade-in">
+                        <img src="https://placehold.co/150x150/F8F5F2/4A4A4A?text=Espresso" alt="Classic Espresso" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-4 border-white shadow-md">
+                        <h3 class="text-2xl font-bold mb-2 text-gray-800">Classic Espresso</h3>
+                        <p class="text-gray-600 mb-4">A rich and aromatic shot of pure coffee bliss. The heart of all our coffee drinks.</p>
+                        <span class="text-xl font-bold text-amber-800">$3.00</span>
+                    </div>
+                    <!-- Menu Item 2 -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 fade-in" style="transition-delay: 200ms;">
+                        <img src="https://placehold.co/150x150/F8F5F2/4A4A4A?text=Latte" alt="Velvet Latte" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-4 border-white shadow-md">
+                        <h3 class="text-2xl font-bold mb-2 text-gray-800">Velvet Latte</h3>
+                        <p class="text-gray-600 mb-4">Steamed milk poured over a shot of espresso, topped with a layer of foam.</p>
+                        <span class="text-xl font-bold text-amber-800">$4.50</span>
+                    </div>
+                    <!-- Menu Item 3 -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 fade-in" style="transition-delay: 400ms;">
+                        <img src="https://placehold.co/150x150/F8F5F2/4A4A4A?text=Pastry" alt="Artisanal Croissant" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-4 border-white shadow-md">
+                        <h3 class="text-2xl font-bold mb-2 text-gray-800">Artisanal Croissant</h3>
+                        <p class="text-gray-600 mb-4">Buttery, flaky, and baked fresh daily. The perfect companion to any coffee.</p>
+                        <span class="text-xl font-bold text-amber-800">$3.50</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 lg:py-32">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                    <h2 class="text-4xl lg:text-5xl font-bold mb-4 text-gray-800 fade-in">Visit Us</h2>
+                    <p class="max-w-2xl mx-auto mb-12 text-gray-600 fade-in">We can't wait to serve you.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12">
+                     <div class="bg-white p-8 rounded-lg shadow-lg fade-in">
+                        <h3 class="text-2xl font-bold mb-4">Opening Hours</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li><span class="font-semibold text-gray-800">Monday - Friday:</span> 7:00 AM - 7:00 PM</li>
+                            <li><span class="font-semibold text-gray-800">Saturday:</span> 8:00 AM - 8:00 PM</li>
+                            <li><span class="font-semibold text-gray-800">Sunday:</span> 8:00 AM - 6:00 PM</li>
+                        </ul>
+                        <h3 class="text-2xl font-bold mt-8 mb-4">Location</h3>
+                        <p class="text-gray-600">123 Coffee Bean Lane,<br>Aromaville, CA 94102</p>
+                     </div>
+                     <div class="bg-white p-8 rounded-lg shadow-lg fade-in">
+                         <h3 class="text-2xl font-bold mb-4">Get In Touch</h3>
+                         <form action="#" method="POST">
+                             <div class="mb-4">
+                                 <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                                 <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+                             </div>
+                              <div class="mb-4">
+                                 <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                                 <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+                             </div>
+                             <div class="mb-4">
+                                  <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                                  <textarea id="message" name="message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required></textarea>
+                             </div>
+                             <button type="submit" class="w-full px-8 py-3 rounded-full font-bold btn-primary text-lg">Send Message</button>
+                         </form>
+                     </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="hover:text-amber-400 transition-colors"><i data-lucide="instagram" class="h-6 w-6"></i></a>
+                <a href="#" class="hover:text-amber-400 transition-colors"><i data-lucide="facebook" class="h-6 w-6"></i></a>
+                <a href="#" class="hover:text-amber-400 transition-colors"><i data-lucide="twitter" class="h-6 w-6"></i></a>
+            </div>
+            <p>&copy; 2024 The Daily Grind. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
